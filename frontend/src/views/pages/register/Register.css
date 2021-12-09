@@ -1,0 +1,7 @@
+.halaman-register.hero {
+    height: unset;
+    padding-top: 100px;
+}
+.card-footer:last-child {
+    border-radius: 0 0 10px 10px!important;
+}

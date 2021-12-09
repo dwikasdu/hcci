@@ -1,0 +1,7 @@
+.svg-bg {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  z-index: 0;
+}
