@@ -1,0 +1,1023 @@
+{
+	"info": {
+		"_postman_id": "7be2df0b-fe62-4e86-862d-466ad7c30af7",
+		"name": "new_api_spmhi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"email_or_username\": \"hartomy\",\r\n        \"password\": \"1234\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"username\": \"hartomy\",\r\n        \"password\": \"1234\",\r\n        \"nama_perusahaan\": \"pt hartomy\",\r\n        \"alamat\": \"malang\",\r\n        \"provinsi\": \"jawa timur\",\r\n        \"kabupaten_kota\": \"malang\",\r\n        \"nomor_telepon\": \"123456789\",\r\n        \"email\": \"drivehartomy@gmail.com\",\r\n        \"nama_penanggung_jawab\": \"tomy\",\r\n        \"nomor_telepon_penanggung_jawab\": \"12345678\",\r\n        \"email_penanggung_jawab\": \"tes@gmail.com\",\r\n        \"last_update\": \"\",\r\n        \"otorisator\": \"tomy\",\r\n        \"id_penyelia\": \"22\",\r\n        \"nama_komunitas\": \"abcd\",\r\n        \"informasi_dari\": \"internet\",\r\n        \"informasi_lainnya\": \"\",\r\n        \"nama_or_merk_produk\": \"sajiku\",\r\n        \"jenis_produk\": \"makanan\",\r\n        \"nama_pemilik\": \"tomy\",\r\n        \"alamat_pemilik\": \"jl malang\",\r\n        \"nomor_hp_pemilik\": \"085567890\",\r\n        \"alamat_penanggungjawab_halal\": \"jl malang\",\r\n        \"daerah_pemasaran\": \"internasional\",\r\n        \"sistem_pemasaran\": \"jualan\",\r\n        \"nomor_lapak\": \"7\",\r\n        \"lokasi_lapak\": \"mall dinoyo\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verifikasi Email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/user/verifikasiEmail/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyaXZlaGFydG9teUBnbWFpbC5jb20iLCJpYXQiOjE2MjQyMTIzODh9.EkiuUEbg7dTmAgbtrLL7_KSZQEkO75E7HxXJlSK1Vko",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"verifikasiEmail",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyaXZlaGFydG9teUBnbWFpbC5jb20iLCJpYXQiOjE2MjQyMTIzODh9.EkiuUEbg7dTmAgbtrLL7_KSZQEkO75E7HxXJlSK1Vko"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidG9teSIsInVzZXJfaWQiOjQ5LCJpYXQiOjE2MjU0MDc5OTIsImV4cCI6MTYyNTQxNTE5Mn0.yCabXSHJMA9aDBJdciMykZ5Zr0QqbyLu63N3JpkWeVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0OSwiaWF0IjoxNjI0MjE1NTg4fQ.5kkqzfUdiX8vvZYpIutScTBLLS8WBEcIUhT1fqanrF8",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get users by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJSVU1BSCBNQUtBTiBJTkRBSCIsImlkX3VzZXIiOjEsInJvbGVzIjoidXNlciIsImlhdCI6MTYyNjQ3MDMzMSwiZXhwIjoxNjI2NTU2NzMxfQ.SdaNBrQafd2BEM8kY3lgCwuzzfCJNBpU-ZkWeJ-7p_Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0OSwiaWF0IjoxNjI0MjE1NTg4fQ.5kkqzfUdiX8vvZYpIutScTBLLS8WBEcIUhT1fqanrF8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3008/api/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJSdW1haCBNYWthbiBPeWkiLCJpZF91c2VyIjoyMDIxMDAwMSwicm9sZXMiOiJ1c2VyIiwiaWF0IjoxNjI2NDkxNTYzLCJleHAiOjE2MjY1Nzc5NjN9.FGCFAX-aYrWyHopaYwMyknf05Jbw9S5yLecUNLtt6BU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0OSwiaWF0IjoxNjI0MjE1NTg4fQ.5kkqzfUdiX8vvZYpIutScTBLLS8WBEcIUhT1fqanrF8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ID_USER\": 20210001,\r\n  \"USERNAME\": \"kasdu\",\r\n  \"PASSWORD\": \"$2a$10$.t/axlxYf2sRR3bIakREKOaHG91uutXTQiOajXiY9casKCdpUIuz.\",\r\n  \"NAMA_PERUSAHAAN\": \"Rumah Makan Oyi\",\r\n  \"ALAMAT\": \"Jl jambu \",\r\n  \"PROVINSI\": \"JAWA TIMUR\",\r\n  \"KABUPATEN_KOTA\": \"KABUPATEN MALANG\",\r\n  \"NOMOR_TELEPON\": \"0842364975\",\r\n  \"EMAIL\": \"drivehartom@gmail.com\",\r\n  \"NAMA_PENANGGUNG_JAWAB\": \"Dwi\",\r\n  \"NOMOR_TELEPON_PENANGGUNG_JAWAB\": \"08454236\",\r\n  \"EMAIL_PENANGGUNG_JAWAB\": \"dwikasdu@gmail.com\",\r\n  \"JABATAN\": 1,\r\n  \"IS_STAFF\": 0,\r\n  \"IS_AKTIF\": 1,\r\n  \"CREATE_DATE\": \"2021-05-19T06:56:20.000Z\",\r\n  \"LAST_UPDATE\": \"1899-11-29T16:52:48.000Z\",\r\n  \"OTORISATOR\": \"\",\r\n  \"LATTITUDE\": \"\",\r\n  \"LONGITUDE\": \"\",\r\n  \"ID_PENYELIA\": \"22\",\r\n  \"NAMA_KOMUNITAS\": \"komunitas cinta makanan\",\r\n  \"INFORMASI_DARI\": null,\r\n  \"INFORMASI_LAINNYA\": null,\r\n  \"NAMA_OR_MERK_PRODUK\": \"Bakso unyil\",\r\n  \"JENIS_PRODUK\": \"makanan\",\r\n  \"NAMA_PEMILIK\": \"Dwi kasdu\",\r\n  \"ALAMAT_PEMILIK\": \"Jl Raya Dermo No 19\",\r\n  \"NOMOR_HP_PEMILIK\": \"085777725238\",\r\n  \"ALAMAT_PENANGGUNGJAWAB_HALAL\": \"malang kota\",\r\n  \"DAERAH_PEMASARAN\": \"mall dinoyo\",\r\n  \"SISTEM_PEMASARAN\": \"malang\",\r\n  \"NOMOR_LAPAK\": \"17\",\r\n  \"LOKASI_LAPAK\": \"Mall dinoyo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/users/update",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"users",
+								"update"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0OSwiaWF0IjoxNjI0MjE1NTg4fQ.5kkqzfUdiX8vvZYpIutScTBLLS8WBEcIUhT1fqanrF8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3008/api/users/delete/20",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"users",
+								"delete",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ubah password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJwdCBoYXJ0b215IiwiaWRfdXNlciI6MjAyMTAwNjEsInJvbGVzIjoidXNlciIsImlhdCI6MTYyNjUwMzA3NCwiZXhwIjoxNjI2NTg5NDc0fQ.fiQQeZTWcLOgyeKlcp9WjrW4i1AiAEoUHl5YAlrg7_A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0OSwiaWF0IjoxNjI0MjIzMzc2fQ.uMDDJCF1vwM7eXktwzwjv7as31VAAjpEhtFCSraVXP0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"last_password\": \"1234\",\r\n    \"new_password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/user/ubahPassword/20210061",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"ubahPassword",
+								"20210061"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lupa Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"drivehartomy@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/user/lupaPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"lupaPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cek ExpiredUbah Password",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/user/cekExpiredUbahPassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyaXZlaGFydG9teUBnbWFpbC5jb20iLCJpYXQiOjE2MjYyOTc5NTIsImV4cCI6MTYyNjMwNTE1Mn0.NVbeFAOf5pmRU24-GgM-HCM3wipQ8PpS2Hg7uU3beQ8",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"cekExpiredUbahPassword",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyaXZlaGFydG9teUBnbWFpbC5jb20iLCJpYXQiOjE2MjYyOTc5NTIsImV4cCI6MTYyNjMwNTE1Mn0.NVbeFAOf5pmRU24-GgM-HCM3wipQ8PpS2Hg7uU3beQ8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ubah Lupa Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"param_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyaXZlaGFydG9teUBnbWFpbC5jb20iLCJpYXQiOjE2MjYyOTEyMTB9.usBhC_dTK9hKCkWv3293jxc_Te3RuUV-uQCzDkxr3aQ\",\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRyaXZlaGFydG9teUBnbWFpbC5jb20iLCJuYW1hX3BlcnVzYWhhYW4iOiJwdCBoYXJ0b215IiwibmFtYV9wZW5hbmdndW5nX2phd2FiIjoidG9teSIsIm5hbWFfcGVtaWxpayI6InRvbXkiLCJpYXQiOjE2MjYyOTEyMTB9.7yY7YRmOSggE8Lnz__Sj18YQcm0TUv4CDhgrxgIZAsg\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/user/ubahLupaPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"ubahLupaPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidG9teSIsInVzZXJfaWQiOjQ5LCJpYXQiOjE2MjQ0NzU4NjQsImV4cCI6MTYyNDQ3NTg4NH0.y_lPbGSiIi6zqcRSwys9QogxkPRu9_F7WA7W_Q38Zd8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/user//refresh",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"user",
+								"",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJwdCBoYXJ0b215IiwiaWRfdXNlciI6MjAyMTAwNTUsImlhdCI6MTYyNTc5MDE2MSwiZXhwIjoxNjI1Nzk3MzYxfQ.dt0W-CszC6JGo1X2UyR11iYWkYgLzfrtO7eFVV9aiRY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3008/api/singleUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"singleUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyToken",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3008/api/getNotification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJSVU1BSCBNQUtBTiBJTkRBSCIsImlkX3VzZXIiOjEsInJvbGVzIjoidXNlciIsImlhdCI6MTYyNjQxNDYzMywiZXhwIjoxNjI2NTAxMDMzfQ.v22gfNyuZF2Zha9NrwIP_w7g8sXn_L2LcyG6p4aH67k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_pengirim\": 1,\r\n    \"id_penerima\": \"22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/getNotification",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"getNotification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produk",
+			"item": [
+				{
+					"name": "Get produk by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/produk/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"produk",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get status print by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/statusPrint/20210005",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"statusPrint",
+								"20210005"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tampilan Print by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidG9teSIsInVzZXJfaWQiOjQ5LCJpYXQiOjE2MjU0MDc5OTIsImV4cCI6MTYyNTQxNTE5Mn0.yCabXSHJMA9aDBJdciMykZ5Zr0QqbyLu63N3JpkWeVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/tampilanPrint/20210005",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"tampilanPrint",
+								"20210005"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cek Step Proses by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/cekStepProses/20210005",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"cekStepProses",
+								"20210005"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CEK Pendampingan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJSVU1BSCBNQUtBTiBTRUxBTUFUIFBBR0kiLCJpZF91c2VyIjoxLCJpYXQiOjE2MjU1MjA3NjYsImV4cCI6MTYyNTUyMDc4Nn0.1FE14DQMOEWGIiSX_SblED3fYAounBLdgSdka0JqH1U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/cekPendampingan/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"cekPendampingan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSERT PRODUK BOM STEP",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJSVU1BSCBNQUtBTiBJR0EiLCJpZF91c2VyIjoxLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE2MjYxODY5NzIsImV4cCI6MTYyNjI3MzM3Mn0.g4Pg8fHf3j-Hkfd7RA2QnP9OZK5H9NH32bzICT3Vmv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": [\r\n    {\r\n      \"id\": 1,\r\n      \"bahan_baku\": \"MASAKO\",\r\n      \"pemasok\": \"TOKO BAROKAH\",\r\n      \"alamat_pemasok\": \"jl malang\",\r\n      \"sertifikat_halal\": \"\",\r\n      \"merk\": \"\",\r\n      \"produsen\": \"\",\r\n      \"lembaga_penerbit\": \"\",\r\n      \"expired_date_sertifikat\": \"\",\r\n      \"kontent\": \"BAKSO\",\r\n      \"id_user\": 1,\r\n      \"status\": \"0\",\r\n      \"keterangan\": \"\",\r\n      \"otorisator\": \"DWI HARIANTO\",\r\n      \"keterangan_bom\": \"\",\r\n      \"status_bahan_baku\": \"0\",\r\n      \"id_in_step\": \"\",\r\n      \"id_bahan_baku\": \"\",\r\n      \"locked\": \"\",\r\n      \"step_id\": \"\",\r\n      \"step_ke\": \"\",\r\n      \"step_keterangan\": \"\"\r\n    },\r\n    {\r\n      \"id_in_step\": 1,\r\n      \"step_ke\": \"1\",\r\n      \"step_keterangan\": \"masak air\",\r\n      \"otorisator\": \"DWI HARIANTO\",\r\n      \"id\": \"\",\r\n      \"kontent\": \"BAKSO\",\r\n      \"id_user\": 1,\r\n      \"status\": \"0\",\r\n      \"keterangan\": \"\",\r\n      \"id_bahan_baku\": \"\",\r\n      \"bahan_baku\": \"\",\r\n      \"pemasok\": \"\",\r\n      \"alamat_pemasok\": \"\",\r\n      \"keterangan_bom\": \"\",\r\n      \"status_bahan_baku\": \"\",\r\n      \"sertifikat_halal\": \"\",\r\n      \"locked\": \"\",\r\n      \"step_id\": \"\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/insertProdukBomStep",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"insertProdukBomStep"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INS BOM",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJwdCBoYXJ0b215IiwiaWRfdXNlciI6MjAyMTAwNTUsInJvbGVzIjoidXNlciIsImlhdCI6MTYyNjMyNjc3OCwiZXhwIjoxNjI2NDEzMTc4fQ.fQdL28iinvQ4d6yCye3fS9R4xyrA5S_zYKfPfU_f0TI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bahan_baku\": \"MASAKO\",\r\n  \"pemasok\": \"CV NARENDRA FOOD\",\r\n  \"alamat_pemasok\": \"\",\r\n  \"sertifikat_halal\": \"986675647\",\r\n  \"merk\": \"MASAKO\",\r\n  \"produsen\": \"SASA\",\r\n  \"lembaga_penerbit\": \"MUI\",\r\n  \"expired_date_sertifikat\": \"2021-07-15\",\r\n  \"in_kode_barang\": 101013,\r\n  \"kontent\": \"undefined\",\r\n  \"id_user\": 1,\r\n  \"status\": \"0\",\r\n  \"keterangan\": \"\",\r\n  \"otorisator\": \"DWI HARIANTO\",\r\n  \"id_bahan_baku\": \"\",\r\n  \"keterangan_bom\": \"\",\r\n  \"status_bahan_baku\": \"0\",\r\n  \"locked\": \"\",\r\n  \"step_id\": \"\",\r\n  \"step_ke\": \"\",\r\n  \"step_keterangan\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/insertBillOfMaterials",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"insertBillOfMaterials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INS STEP PRO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hX3BlcnVzYWhhYW4iOiJwdCBoYXJ0b215IiwiaWRfdXNlciI6MjAyMTAwNTUsInJvbGVzIjoidXNlciIsImlhdCI6MTYyNjMyNjc3OCwiZXhwIjoxNjI2NDEzMTc4fQ.fQdL28iinvQ4d6yCye3fS9R4xyrA5S_zYKfPfU_f0TI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"in_kode_barang\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/api/insertStepProduksi",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"insertStepProduksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET produk halal per page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/ProdukHalalMUI?page=1&numPerPage=10",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"ProdukHalalMUI"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "numPerPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Produk Halal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/searchProdukMUI?search=kopi&page=1&numPerPage=10",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"searchProdukMUI"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "kopi"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "numPerPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Serach Produk umk by penyelia",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3008/admin/search_Produk_By_Penyelia?id=21&search=ayam&page=1&numPerPage=10",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"admin",
+								"search_Produk_By_Penyelia"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "21"
+								},
+								{
+									"key": "search",
+									"value": "ayam"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "numPerPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Serach Produk by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/api/SearchMasterProduk?id=1&search=&page=1&numPerPage=10",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"api",
+								"SearchMasterProduk"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "numPerPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UMKM",
+			"item": [
+				{
+					"name": "GET total umkm",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/admin/getTotalUmkm",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"admin",
+								"getTotalUmkm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get UMKM terdaftar tiap bulan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tahun\": 2021\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/admin/getRecordUmkmByBulan",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"admin",
+								"getRecordUmkmByBulan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kunjungan",
+			"item": [
+				{
+					"name": "Search Kunjungan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/admin/search_kunjungan_by_penyelia?id=21&search=&page=2&numPerPage=10",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"admin",
+								"search_kunjungan_by_penyelia"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "21"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "numPerPage",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Kunjungan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3008/admin/deleteKunjungan?id_kunjungan=19",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"admin",
+								"deleteKunjungan"
+							],
+							"query": [
+								{
+									"key": "id_kunjungan",
+									"value": "19"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INS Kunjungan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_user\": \"1\",\r\n    \"tanggal\": \"2021-08-10\",\r\n    \"kode_jabatan\": \"\",\r\n    \"is_kunjungan\": \"\",\r\n    \"otorisator\": \"\",\r\n    \"kode_barang\": \"\",\r\n    \"content\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3008/admin/insertKunjungan",
+							"host": [
+								"localhost"
+							],
+							"port": "3008",
+							"path": [
+								"admin",
+								"insertKunjungan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
