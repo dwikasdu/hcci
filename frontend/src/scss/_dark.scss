@@ -1,0 +1,195 @@
+body {
+  &.dark-mode {
+    color: #bdc1c6;
+    background-color: #202124;
+
+    a {
+      color: #099f9f;
+    }
+
+    .c-app {
+      color: #bdc1c6;
+      background-color: #202124;
+    }
+
+    .c-header {
+      background-color: #272d37;
+
+      .c-header-nav {
+        .c-header-nav-link {
+          color: #bdc1c6;
+
+          &:hover {
+            color: #bdc1c6;
+          }
+
+          &:focus {
+            color: #bdc1c6;
+          }
+        }
+
+        .c-header-nav-btn {
+          color: #bdc1c6;
+
+          &:hover {
+            color: #bdc1c6;
+          }
+
+          &:focus {
+            color: #bdc1c6;
+          }
+        }
+      }
+
+      .c-subheader {
+        border-top: 1px solid #434955;
+      }
+
+      .c-header-brand {
+        color: #bdc1c6;
+      }
+    }
+
+    .c-avatar {
+      svg {
+        fill: #bdc1c6;
+      }
+    }
+
+    .c-subheader {
+      background-color: #272d37;
+    }
+
+    .c-sidebar {
+      background-color: #2b2f39 !important;
+
+      .c-sidebar-brand {
+        border-color: #353a448f;
+      }
+    }
+
+    .card {
+      background-color: #272d37;
+      color: #fff;
+    }
+
+    .card-header {
+      background-color: #272d37;
+      border-color: #434955;
+    }
+
+    .c-footer {
+      color: #bdc1c6;
+      background: #272d37;
+      border-top: 1px solid #434955;
+    }
+
+    .modal-header {
+      border-color: #434955;
+    }
+
+    .modal-content {
+      background-color: #272d37;
+    }
+
+    .close {
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .form-control {
+      color: #fff;
+      background-color: #1a1f28;
+      border-color: #33373e;
+
+      &:disabled {
+        background-color: #4c5462;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    .css-yk16xz-control {
+      color: #fff;
+      background-color: #1a1f28;
+      border-color: #33373e;
+    }
+
+    .css-1pahdxg-control {
+      color: #fff;
+      background-color: #1a1f28;
+    }
+
+    .form-control[readonly] {
+      background-color: #4c5462;
+    }
+
+    .card-footer {
+      background: #272d37;
+      border-color: #434955;
+    }
+
+    .table {
+      color: #fff;
+    }
+
+    .vertical-timeline--two-columns {
+      .vertical-timeline-element-content {
+        .vertical-timeline-element-date {
+          color: #fff;
+        }
+      }
+    }
+
+    .MuiPaper-root {
+      color: #fff;
+      background-color: #272d37;
+    }
+
+    .MuiStepLabel-label {
+      color: rgb(130, 130, 130);
+
+      &.MuiStepLabel-completed {
+        color: #fff;
+      }
+
+      &.MuiStepLabel-active {
+        color: #fff;
+      }
+    }
+
+    .input-group-text {
+      background-color: #1f2632;
+      border-color: #2f3948;
+    }
+  }
+}
+
+body.dark-mode .sweet-alert {
+  background-color: #272d37 !important;
+  color: #fff;
+}
+
+body.dark-mode .btn-success {
+  color: #bbb;
+  background-color: #272d37 !important;
+}
+
+body.dark-mode .dropdown-menu {
+  color: #bbb;
+  background-color: #272d37;
+  border-color: #2f3948;
+}
+
+body.dark-mode #async-example a {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 1px solid #666;
+}
+
+body.dark-mode #async-example a:hover {
+  background-color: #272d37;
+}
