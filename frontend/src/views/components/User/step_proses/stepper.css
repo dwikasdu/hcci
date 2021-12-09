@@ -1,0 +1,19 @@
+@media only screen and (max-width: 550px) {
+    .MuiStepper-root {
+        padding: 24px 0!important;
+    }
+    .MuiStep-horizontal {
+        padding: unset!important;
+    }
+    .makeStyles-root-4 {
+        width: 40px!important;
+        height: 40px!important;
+    }
+    .WithStyles\(ForwardRef\(StepConnector\)\)-alternativeLabel-7 {
+        top: 18px!important;
+    }
+    .MuiTypography-body2 {
+        font-size: 0.6rem!important;
+        font-family: "Nunito", sans-serif!important;
+    }
+}
