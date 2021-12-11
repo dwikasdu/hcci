@@ -143,7 +143,7 @@ function Produk_By_Penyelia() {
                         return <div className="col-12 col-sm-6 col-md-4" ref={lastItemElementRef} key={item.CONTENT + Date.now() + index + 1}>
                             <Link to={
                                 {
-                                    pathname: `/master-umkm/Pemeriksaan_Produk/search?_id=${window.btoa(item.KODE_BARANG)}&_key=${window.btoa(item.CONTENT)}`,
+                                    pathname: `/master-umkm/Pemeriksaan_Produk/search?_id=${window.btoa(item.KODE_BARANG)}&_key=${window.btoa(item.CONTENT)}&_user=${window.btoa(item.ID_USER)}`,
                                     state: {
                                         is_edit: true,
                                         KODE_BARANG: item.KODE_BARANG,
@@ -169,7 +169,7 @@ function Produk_By_Penyelia() {
                         return <div className="col-12 col-sm-6 col-md-4" key={item.CONTENT + Date.now() + index + 1}>
                             <Link to={
                                 {
-                                    pathname: `/master-umkm/Pemeriksaan_Produk/search?_id=${window.btoa(item.KODE_BARANG)}&_key=${window.btoa(item.CONTENT)}`,
+                                    pathname: `/master-umkm/Pemeriksaan_Produk/search?_id=${window.btoa(item.KODE_BARANG)}&_key=${window.btoa(item.CONTENT)}&_user=${window.btoa(item.ID_USER)}`,
                                     state: {
                                         is_edit: true,
                                         KODE_BARANG: item.KODE_BARANG,

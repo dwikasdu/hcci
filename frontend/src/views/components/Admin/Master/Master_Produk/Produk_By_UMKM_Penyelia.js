@@ -130,11 +130,11 @@ function Produk_By_UMKM_Penyelia() {
                                             <td>:</td>
                                             <td><label id="lbl_nama_perusahaan">{param_name}</label></td>
                                         </tr>
-                                        <tr>
+                                        {/* <tr>
                                             <td>Alamat</td>
                                             <td>:</td>
-                                            <td><label id="lbl_produk">{getUmkm.ALAMAT}</label></td>
-                                        </tr>
+                                            <td><label id="lbl_produk">{getUmkm.ALAMAT !== undefined ? getUmkm.ALAMAT : ""}</label></td>
+                                        </tr> */}
                                         <tr>
                                             <td>Penanggung Jawab</td>
                                             <td>:</td>
