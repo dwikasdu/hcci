@@ -1,8 +1,8 @@
 {
-  "name": "cloudmicrosystem-dev-HCCI.com",
+  "name": "cloudmicrosystem-dev-HC-UM.com",
   "version": "3.2.1",
-  "description": "HCCI (SISTEM PENJAMIN MUTU HALAL INTERNAL)",
-  "author": "HCCI",
+  "description": "HC-UM (SISTEM PENJAMIN MUTU HALAL INTERNAL)",
+  "author": "HC-UM",
   "contributors": [
     "CoreUI Team (https://github.com/orgs/coreui/people)"
   ],

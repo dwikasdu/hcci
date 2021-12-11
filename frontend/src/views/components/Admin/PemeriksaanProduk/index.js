@@ -67,6 +67,7 @@ function PemeriksaanProduk() {
                         defaultInputValue={initialValue === 1 ? 'HALAL' : initialValue === 2 ? 'MERAGUKAN' : initialValue === 3 ? 'HARAM' : ''}
                         placeholder="Pilih Status"
                         paginationText="Muat lebih banyak..."
+                        positionFixed 
                     />
                 </CInputGroup>
             </>
@@ -330,7 +331,7 @@ function PemeriksaanProduk() {
 
                             <br />
                             <hr />
-                            <strong><h4 style={{ fontWeight: "900" }}><center>TAHAPAN PEROSES</center></h4></strong>
+                            <strong><h4 style={{ fontWeight: "900" }}><center>{steps.length} TAHAPAN PROSES</center></h4></strong>
                             <hr />
                             <br />
                             <TableStep dataStep={steps} />

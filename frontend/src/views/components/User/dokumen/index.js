@@ -653,14 +653,14 @@ function index(props) {
                 >
                     <center>
                         <h1 style={{ fontWeight: "900" }}>AKAD/IKRAR HALAL</h1>
-                        No: 20210528/HCCI-001
+                        No: 20210528/HC-UM-001
                         <br />
                         <br />
                         <span className="konten-item-print" style={{ width: "78%", display: "block" }}>
                             Yang bertanda tangan di bawah ini menyatakan ikrar.
                             bahwa produk "<b style={{ textTransform: "uppercase" }}>{props.namaProduk}</b>" yang telah saya hasilkan,
                             telah sesuai dengan Sistem Penjaminan Mutu Halal Internal <br />
-                            (HCCI HAKI No : 000169053 oleh Prof Dr Ir H Mohammad Bisri,MS.)
+                            (HC-UM HAKI No : 000169053 oleh Prof Dr Ir H Mohammad Bisri,MS.)
                             <br />
                             didampingi Halal Center Cinta Indonesia
                             <br />

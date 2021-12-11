@@ -48,7 +48,7 @@ const Home = () => {
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <Link className="logo d-flex align-items-center" shape="pill" color="link" to="/">
             {/* <!-- <img src="assets/img/logo.png" alt=""> --> */}
-            <span><strong>HCCI</strong></span>
+            <span><strong>HC-UM</strong></span>
           </Link>
 
           {/* <nav id="navbar" className={btClass !== false ? "navbar navbar-mobile" : "navbar"}>
@@ -96,8 +96,8 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div data-aos="zoom-in-up" className="col-lg-6 d-flex flex-column justify-content-center">
-              <h1>Selamat Datang Di Website HCCI.</h1>
-              <h2>Halal Center Cinta Indonesia Ponpes Bahrul Maghfiroh</h2>
+              <h1>Selamat Datang Di Website HC-UM.</h1>
+              <h2>Halal Center Universitas Negeri Malang</h2>
               <div>
                 <div className="text-center text-lg-start">
                   <Link style={{ textDecoration: "none" }} className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center" shape="pill" color="link" to="/register">
@@ -134,13 +134,13 @@ const Home = () => {
                     className="text-left m-0 p-0"
                     onClick={() => setAccordion(accordion === 1 ? null : 1)}
                   >
-                    <h5 className="m-0 p-0">Apa itu HCCI?</h5>
+                    <h5 className="m-0 p-0">Apa itu HC-UM?</h5>
                   </CButton>
                 </CCardHeader>
                 <CCollapse show={accordion === 1}>
                   <CCardBody>
                     <div className="ml-3">
-                      HCCI adalah Sistem Penjaminan Mutu Halal yang dilakukan oleh Halal Center Cinta Indonesia (HCCI)
+                      HC-UM adalah Sistem Penjaminan Mutu Halal yang dilakukan oleh Halal Center Universitas Negeri Malang (HC-UM)
                     </div>
                   </CCardBody>
                 </CCollapse>
@@ -152,13 +152,13 @@ const Home = () => {
                     className="text-left m-0 p-0"
                     onClick={() => setAccordion(accordion === 2 ? null : 2)}
                   >
-                    <h5 className="m-0 p-0">Untuk siapa HCCI ditujukan ?</h5>
+                    <h5 className="m-0 p-0">Untuk siapa HC-UM ditujukan ?</h5>
                   </CButton>
                 </CCardHeader>
                 <CCollapse show={accordion === 2}>
                   <CCardBody>
                     <div className="ml-3">
-                      HCCI ditujukan untuk pelaku usaha baik UKM/IKM sebagai wujud untuk mendukung produk halal bagi masyarakat
+                      HC-UM ditujukan untuk pelaku usaha baik UKM/IKM sebagai wujud untuk mendukung produk halal bagi masyarakat
                     </div>
                   </CCardBody>
                 </CCollapse>
@@ -278,7 +278,7 @@ const Home = () => {
             <div className="row gy-4">
               <div data-aos="zoom-in-up" data-aos-delay="70" className="col-lg-5 col-md-12 footer-info">
                 <a href="/" className="logo d-flex align-items-center">
-                  <span>HCCI</span>
+                  <span>HC-UM</span>
                 </a>
                 <span>Memberikan pelayanan pemeriksaan kualitas produk yang menjamin mutu dan kehalalannya</span>
                 {/* <div className="social-links mt-3">
@@ -315,7 +315,7 @@ const Home = () => {
                   Malang <br />
                   Indonesia <br /><br />
                   <strong>Phone:</strong> +62 80000000<br />
-                  <strong>Email:</strong> info@HCCI.com<br />
+                  <strong>Email:</strong> info@HC-UM.com<br />
                 </span>
 
               </div>
@@ -326,7 +326,7 @@ const Home = () => {
 
         <div className="container">
           <div className="copyright">
-            &copy; Copyright <strong><span>HCCI</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>HC-UM</span></strong>. All Rights Reserved
           </div>
           <div className="credits">
             Created by <a href="/">Cloudmicrosystem</a>

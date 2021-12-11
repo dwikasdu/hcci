@@ -27,8 +27,8 @@ const GET_Total_Umkm = (req, res) => {
 const GET_Jumlah_Umkm_per_bulan = (req, res) => {
     mysqlLib.executeQuery(`
         SELECT 
-        IF(v.BULAN RLIKE '1','JANUARI',
-        IF(v.BULAN RLIKE '2','FEBRUARI',
+        IF(v.BULAN = '1','JANUARI',
+        IF(v.BULAN = '2','FEBRUARI',
         IF(v.BULAN RLIKE '3','MARET',
         IF(v.BULAN RLIKE '4','APRIL',
         IF(v.BULAN RLIKE '5','MEI',

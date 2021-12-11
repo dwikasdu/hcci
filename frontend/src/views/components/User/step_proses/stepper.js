@@ -68,13 +68,13 @@ function ColorlibStepIcon(props) {
         2: <svg fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" /></svg>,
         3: <svg fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" /></svg>,
         4: <svg fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" /></svg>,
-        5: <svg fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" /></svg>,
+        // 5: <svg fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" /></svg>,
     };
 
     const link = {
         1: "/",
         2: "/user/tambah-produk",
-        3: "/user/infq",
+        // 3: "/user/infq",
         4: "/",
         5: "/",
     };
@@ -111,7 +111,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-    return ["Register", "Input Produk", "Infaq", "Evaluasi", "Verifikasi"];
+    // return ["Register", "Input Produk", "Infaq", "Evaluasi", "Verifikasi"];
+    return ["Register", "Input Produk", "Evaluasi", "Verifikasi"];
 }
 
 function getStepContent(step) {
@@ -120,8 +121,8 @@ function getStepContent(step) {
             return "Registrasi telah dilewati. Selanjutnya silahkan lakukan pengimputan produk.";
         case 1:
             return "Produk baru telah di input. Silahkan lakukan pembayaran infaq untuk meneruskan proses pemeriksaaan.";
-        case 2:
-            return "Infaq telah kami terima, mohon menunggu proses evaluasi dari petugas";
+        // case 2:
+        //     return "Infaq telah kami terima, mohon menunggu proses evaluasi dari petugas";
         case 3:
             return "Produk anda telah kami evaluasi, mohon menunggu proses verifikasi";
         case 4:
@@ -144,6 +145,7 @@ function CustomizedSteppers() {
     useEffect(() => {
         API.getCekStepProses(id_user).then(res => {
             setActiveStep(res.data);
+            console.log(res.data)
         });
     }, [id_user])
 
@@ -153,8 +155,8 @@ function CustomizedSteppers() {
                 return 0;
             case 2:
                 return 1;
-            case 3:
-                return 2;
+            // case 3:
+            //     return 2;
             case 4:
                 return 3;
             case 5:

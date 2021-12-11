@@ -17,11 +17,18 @@ const _nav = [
     icon: <CIcon content={freeSet.cilImage} customClasses="c-sidebar-nav-icon" />,
     role: ['user'],
   },
+  // {
+  //   _tag: 'CSidebarNavItem',
+  //   name: 'Infaq',
+  //   to: '/user/infq',
+  //   icon: <CIcon content={freeSet.cilBank} customClasses="c-sidebar-nav-icon" />,
+  //   role: ['user'],
+  // },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Infaq',
-    to: '/user/infq',
-    icon: <CIcon content={freeSet.cilBank} customClasses="c-sidebar-nav-icon" />,
+    name: 'Upload Berkas',
+    to: '/',
+    icon: <CIcon content={freeSet.cilBook} customClasses="c-sidebar-nav-icon" />,
     role: ['user'],
   },
   {

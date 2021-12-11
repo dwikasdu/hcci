@@ -54,7 +54,7 @@ const TheSidebar = () => {
       onShowChange={(val) => dispatch({ type: 'set', sidebarShow: val })}
     >
       <CSidebarBrand className="d-md-down-none" to="/">
-        <h4><strong>{roles.includes('user') ? 'HCCI UMKM' : 'HCCI ADMIN'}</strong></h4>
+        <h4><strong>{roles.includes('user') ? 'HC-UM UMKM' : 'HC-UM ADMIN'}</strong></h4>
         {/* <CIcon
           className="c-sidebar-brand-full"
           name="logo-negative"

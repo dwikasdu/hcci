@@ -8,7 +8,7 @@ function Footer() {
             <footer id="footer" className="footer">
                 <div className="container">
                     <div className="copyright">
-                        &copy; Copyright <strong><span>HCCI</span></strong>. All Rights Reserved
+                        &copy; Copyright <strong><span>HC-UM</span></strong>. All Rights Reserved
                     </div>
                     <div className="credits">
                         Created by <a href="/">cloudmicrosystem.com</a>

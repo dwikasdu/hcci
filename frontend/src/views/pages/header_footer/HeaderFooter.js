@@ -10,7 +10,7 @@ function HeaderFooter({ children }) {
                 <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
                     <Link className="logo d-flex align-items-center" shape="pill" color="link" to="/">
                         {/* <!-- <img src="assets/img/logo.png" alt=""> --> */}
-                        <span><strong>HCCI</strong></span>
+                        <span><strong>HC-UM</strong></span>
                     </Link>
 
                     {/* <nav id="navbar" className={this.state.btn_class !== false ? "navbar navbar-mobile" : "navbar"}>
@@ -36,7 +36,7 @@ function HeaderFooter({ children }) {
             <footer id="footer" className="footer">
                 <div className="container">
                     <div className="copyright">
-                        &copy; Copyright <strong><span>HCCI</span></strong>. All Rights Reserved
+                        &copy; Copyright <strong><span>HC-UM</span></strong>. All Rights Reserved
                     </div>
                     <div className="credits">
                         Created by <a href="/">cloudmicrosystem.com</a>

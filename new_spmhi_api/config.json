@@ -12,8 +12,8 @@
     },
     "database": {
         "HOSTNAME": "localhost",
-        "USER": "edp1",
-        "PASSWORD": "edp1malang",
+        "USER": "root",
+        "PASSWORD": "",
         "DATABASE": "spmhi_db"
     },
     "email": {

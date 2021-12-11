@@ -75,7 +75,7 @@ const TheHeader = () => {
         <svg fill={darkMode ? '#bdc1c6' : '#3c4b64bf'} width="24" height="24" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
       </button>
       <CHeaderBrand className="mx-auto d-lg-none" to="/">
-        <h4><strong>{roles.includes('user') ? 'HCCI UMKM' : 'HCCI ADMIN'}</strong></h4>
+        <h4><strong>{roles.includes('user') ? 'HC-UM UMKM' : 'HC-UM ADMIN'}</strong></h4>
         {/* <CIcon name="logo" height="48" alt="Logo" /> */}
       </CHeaderBrand>
 

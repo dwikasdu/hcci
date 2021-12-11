@@ -198,7 +198,7 @@ const CetakDokumen = () => {
                     }
                 }
             });
-            doc.save(`HCCI-${bill[0].kontent}-${Date.now()}.pdf`)
+            doc.save(`HC-UM-${bill[0].kontent}-${Date.now()}.pdf`)
             seLoadingDokumen(false)
         }, 1500);
     }
